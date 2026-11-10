@@ -114,13 +114,6 @@ This is a local portfolio/learning application. It has no login or role-based au
 
 ## GitHub details
 
-**Repository name:** `libratrack-library-system`
-
-**Description:** `A smart library management system using a C++20 REST API, MySQL, and a vanilla JavaScript dashboard.`
-
-**Commit title:** `Add LibraTrack library management system`
-
-**Commit description:** `Build a C++ REST API and MySQL library system with book search, member management, loans, FIFO reservations, and a responsive web dashboard.`
 
 
 
