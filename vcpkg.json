@@ -1,0 +1,11 @@
+{
+  "name": "libratrack-library-system",
+  "version-string": "1.0.0",
+  "dependencies": [
+    "crow",
+    {
+      "name": "mysql-connector-cpp",
+      "features": ["jdbc"]
+    }
+  ]
+}
