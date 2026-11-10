@@ -1,0 +1,19 @@
+services:
+  mysql:
+    image: mysql:8.4
+    container_name: libratrack-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: localdevpass
+      MYSQL_DATABASE: libratrack
+    ports:
+      - "3306:3306"
+    volumes:
+      - libratrack_mysql_data:/var/lib/mysql
+      - ./sql:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "127.0.0.1", "-plocaldevpass"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+volumes:
+  libratrack_mysql_data:
